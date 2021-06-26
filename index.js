@@ -56,6 +56,11 @@ const questions = [
   },
   {
     type: 'input',
+    message: 'What is your email?',
+    name: 'email',
+  },
+  {
+    type: 'input',
     message: 'paste your screenshot or gif preview URL',
     name: 'preview',
   },

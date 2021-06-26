@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     return ('None used');
   }
   else {
-    return(`[![License: ${license}](https://img.shields.io/badge/License-${license}-0298c3.svg)]`)
+    return(`[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)]`)
   }
 }
 
@@ -50,6 +50,10 @@ function generateMarkdown(data) {
   ## Table of Contents 
   * [Usage](#Usage)
   * [Contributions](#Contributions)
+  * [Deployed URL](#Deployed)
+  * [GitHub URL](#GitHub)
+  * [Email Me](#Email)
+  * [Preview](#Preview)
   * [Technologies](#technologies)
 
   ## Usage
@@ -61,6 +65,8 @@ function generateMarkdown(data) {
   ## _Deployed URL_: ${data.deployedURL}
   
   ## _GitHub URL_: ${data.GitHubURL}
+
+  ## _Email Me_: ${data.email}
 
   ## Preview: ![Screenshot](${data.preview})
 
