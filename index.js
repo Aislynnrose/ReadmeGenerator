@@ -12,6 +12,11 @@ const questions = [
     name: 'title',
   },
   {
+    type: 'input',
+    message: 'What is your project description?',
+    name: 'description',
+  },
+  {
     type: 'list',
     message: 'What is your license?',
     name: 'license',
@@ -86,7 +91,7 @@ function init() {
   inquirer.prompt(questions)
   .then(response => {
     const fileText = generateMarkdown(response);
-    const fileName = response.title + "-readme.md";
+    const fileName = "README.md";
     writeToFile(fileName, fileText);
 });
 }

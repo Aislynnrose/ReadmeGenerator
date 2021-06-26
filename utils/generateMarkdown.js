@@ -44,6 +44,8 @@ function generateMarkdown(data) {
   ## License
   ${renderLicenseSection(data.license)}
 
+  ## description
+  ${data.description}
   
   ## Table of Contents 
   * [Usage](#Usage)
