@@ -21,6 +21,7 @@ const questions = [
       'MIT',
       'IBM',
       'Eclipse',
+      'None',
     ]
   },
   {
@@ -31,7 +32,7 @@ const questions = [
   {
     type: "input",
     name: "contributions",
-    message: "What are the Please enter contribution guidelines for your project.",
+    message: "What are the contribution guidelines for your project.",
 },
 {
     type: "input",
@@ -82,7 +83,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer
+  inquirer.prompt(questions)
   .then(response => {
     const fileText = generateMarkdown(response);
     const fileName = response.title + "-readme.md";
